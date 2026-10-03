@@ -6,6 +6,13 @@ http://d.hatena.ne.jp/coolstyle/20110708/1310100053
 
 == install
 
-rake db:migrate_plugins RAILS_ENV=production
+Redmine 6.0 以降に対応しています。
+
+plugins/mail_intergration に配置して
+
+  bin/rake redmine:plugins:migrate RAILS_ENV=production
+
 (テーブルを追加するだけなので危険は少ないです)
-あとは適切にrake redmine:email:receive_pop3してください。
+あとは適切に bin/rake redmine:email:receive_pop3 してください。
+
+ディレクトリ名はプラグインID (mail_intergration) と一致させてください。

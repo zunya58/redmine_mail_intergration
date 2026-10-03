@@ -1,5 +1,3 @@
-class MailMessage < ActiveRecord::Base
-    unloadable
-    belongs_to :issue
+class MailMessage < ApplicationRecord
+  belongs_to :issue
 end
-

@@ -1,4 +1,4 @@
-class AddMailMessages < ActiveRecord::Migration
+class AddMailMessages < ActiveRecord::Migration[4.2]
   def self.up
     create_table :mail_messages do |t|
       t.column :message_id, :string, :null => false
